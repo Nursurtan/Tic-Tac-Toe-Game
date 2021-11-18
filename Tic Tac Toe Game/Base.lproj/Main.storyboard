@@ -27,18 +27,27 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLb-UP-Tg9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl5-1u-cSs">
                                                 <rect key="frame" x="126" y="0.0" width="121" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5r-Gq-BOv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-Z5-xam">
                                                 <rect key="frame" x="252" y="0.0" width="121" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kat-Mt-lw5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -50,18 +59,27 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxi-Xt-11G"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxL-Aw-pJN">
                                                 <rect key="frame" x="126" y="0.0" width="121" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kqc-XP-L34"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKX-DP-5of">
                                                 <rect key="frame" x="252" y="0.0" width="121" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8XY-62-S2z"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -73,18 +91,27 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DdC-tP-fwe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-Jw-7PK">
                                                 <rect key="frame" x="126" y="0.0" width="121" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKm-iM-oSd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF5-dp-Sx9">
                                                 <rect key="frame" x="252" y="0.0" width="121" height="121"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="boardTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dt0-bE-BPy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -119,6 +146,18 @@
                             <constraint firstItem="ocF-EJ-TeI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jzo-TN-Aow"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="a1" destination="dqy-4c-YKo" id="vMl-kx-jSd"/>
+                        <outlet property="a2" destination="vl5-1u-cSs" id="rbI-GB-bgs"/>
+                        <outlet property="a3" destination="IJD-Z5-xam" id="hOU-Zd-jDi"/>
+                        <outlet property="b1" destination="U9k-Cm-nLD" id="ktz-j8-2Vj"/>
+                        <outlet property="b2" destination="vxL-Aw-pJN" id="oPT-iJ-XnD"/>
+                        <outlet property="b3" destination="lKX-DP-5of" id="dd4-Qa-kDf"/>
+                        <outlet property="c1" destination="bbd-ME-bpT" id="FDC-dS-zAx"/>
+                        <outlet property="c2" destination="HVq-Jw-7PK" id="yDy-pY-7Hk"/>
+                        <outlet property="c3" destination="CF5-dp-Sx9" id="Bye-bO-QDG"/>
+                        <outlet property="turnLabel" destination="yrX-LM-4Ma" id="qor-eu-sBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

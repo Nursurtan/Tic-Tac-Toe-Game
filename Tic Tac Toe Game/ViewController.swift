@@ -55,13 +55,39 @@ class ViewController: UIViewController {
     @IBAction func boardTapAction(_ sender: UIButton) {
         addToBoard(sender)
         if(fullBoard()) {
-            
+            resultAlert(title: "Draw")
         }
+    }
+    
+    func checkForVictory(_ s :String) -> Bool {
+        return false
+    }
+    //66
+    func thisSymbol(_ button: UIButton, _ symbol: String) -> Bool {
+        return button.title(for: .normal) == symbol
     }
     
     func resultAlert(title: String) {
         let ac = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
-        ac.addAction(UIAlertAction(title: "Reset", style: .default, handler: {(_) in } ))
+        ac.addAction(UIAlertAction(title: "Reset", style: .default, handler: {(_) in
+            self.resetBoard() } ))
+        self.present(ac, animated: true)
+    }
+    
+    func resetBoard() {
+        for button in board{
+            button.setTitle(nil, for: .normal)
+            button.isEnabled = true
+        }
+        if firstTurn == Turn.Nought {
+            firstTurn = Turn.Cross
+            turnLabel.text = CROSS
+        }
+        else if firstTurn == Turn.Cross {
+            firstTurn = Turn.Nought
+            turnLabel.text = NOUGHT
+        }
+        currentTurn = firstTurn
     }
     
     func fullBoard() -> Bool {

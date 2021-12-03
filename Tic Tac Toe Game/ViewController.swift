@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     var CROSS = "X"
     var board = [UIButton]()
     
+    var noughtsScore = 0
+    var crossesScore = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initBoard()
@@ -54,15 +57,57 @@ class ViewController: UIViewController {
 
     @IBAction func boardTapAction(_ sender: UIButton) {
         addToBoard(sender)
+        
+        if checkForVictory(CROSS) {
+            resultAlert(title: "Crosses Win!")
+            // stopped here
+        }
+        if checkForVictory(NOUGHT) {
+            resultAlert(title: "Noughts Win!")
+        }
+        
         if(fullBoard()) {
             resultAlert(title: "Draw")
         }
     }
     
     func checkForVictory(_ s :String) -> Bool {
+        
+        // Horizontal Victory
+        if thisSymbol(a1, s) && thisSymbol(a2, s) && thisSymbol(a3, s) {
+            return true
+        }
+        if thisSymbol(b1, s) && thisSymbol(b2, s) && thisSymbol(b3, s) {
+            return true
+        }
+        if thisSymbol(c1, s) && thisSymbol(c2, s) && thisSymbol(c3, s) {
+            return true
+        }
+        
+        // Vertical Victory
+        if thisSymbol(a1, s) && thisSymbol(b1, s) && thisSymbol(c1, s) {
+            return true
+        }
+        if thisSymbol(a2, s) && thisSymbol(b2, s) && thisSymbol(c2, s) {
+            return true
+        }
+        if thisSymbol(a3, s) && thisSymbol(b3, s) && thisSymbol(c3, s) {
+            return true
+        }
+        
+        // Diogonal Victory
+        if thisSymbol(a1, s) && thisSymbol(b2, s) && thisSymbol(c3, s) {
+            return true
+        }
+        if thisSymbol(a3, s) && thisSymbol(b2, s) && thisSymbol(c1, s) {
+            return true
+        }
+        
         return false
     }
-    //66
+    
+    
+
     func thisSymbol(_ button: UIButton, _ symbol: String) -> Bool {
         return button.title(for: .normal) == symbol
     }

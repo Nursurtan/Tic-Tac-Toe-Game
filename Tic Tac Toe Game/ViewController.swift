@@ -59,14 +59,17 @@ class ViewController: UIViewController {
         addToBoard(sender)
         
         if checkForVictory(CROSS) {
+            crossesScore += 1
             resultAlert(title: "Crosses Win!")
-            // stopped here
         }
+        
         if checkForVictory(NOUGHT) {
+            noughtsScore += 1
             resultAlert(title: "Noughts Win!")
         }
         
         if(fullBoard()) {
+            
             resultAlert(title: "Draw")
         }
     }
@@ -113,6 +116,8 @@ class ViewController: UIViewController {
     }
     
     func resultAlert(title: String) {
+        
+//        let message = "\nNoughts " + String(noughtsScore) + "\n\nCrosses " + String(crossesScore)
         let ac = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "Reset", style: .default, handler: {(_) in
             self.resetBoard() } ))
